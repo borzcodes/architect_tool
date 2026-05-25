@@ -57,14 +57,7 @@ const Navbar = () => {
                             </Button>
                         </>
                     ) : (
-                        <>
-                            <Button onClick={handleAuthClick} size='sm' variant='ghost'>
-                                Log In
-                            </Button>
-                            <a href='#upload' className='cta'>
-                                Get Started
-                            </a>
-                        </>
+
                     )}
                 </div>
             </nav>
