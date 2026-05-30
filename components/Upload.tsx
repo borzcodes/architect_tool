@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {useOutletContext} from "react-router";
-import {UploadIcon} from "lucide-react";
+import {CheckCircle2, CheckCircleIcon, ImageIcon, UploadIcon} from "lucide-react";
 
 const Upload = () => {
     const [file, setFile] = useState<File | null> (null);
@@ -32,7 +32,17 @@ const Upload = () => {
                     </div>
                 </div>
             ):(
-                <div></div>
+                <div className='upload-status'>
+                    <div className='status-content'>
+                        <div className='status-icon'>
+                            {progress === 100 ? (
+                                <CheckCircle2 className="check" />
+                            ):(
+                                <ImageIcon className='image' />
+                            )}
+                        </div>
+                    </div>
+                </div>
             )}
         </div>
     )
