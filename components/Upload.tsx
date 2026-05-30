@@ -41,6 +41,14 @@ const Upload = () => {
                                 <ImageIcon className='image' />
                             )}
                         </div>
+
+                        <h3>{file.name}</h3>
+
+                        <div className='progress'>
+                            <div className='bar' style={{ width: `${progress}%` }}>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             )}
