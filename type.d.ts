@@ -4,28 +4,6 @@ interface AuthState {
     userId: string | null;
 }
 
-interface Material {
-    id: string;
-    name: string;
-    thumbnail: string;
-    type: "color" | "texture";
-    category: "floor" | "wall" | "furniture";
-}
-
-interface DesignItem {
-    id: string;
-    name?: string | null;
-    sourceImage: string;
-    sourcePath?: string | null;
-    renderedImage?: string | null;
-    renderedPath?: string | null;
-    publicPath?: string | null;
-    timestamp: number;
-    ownerId?: string | null;
-    sharedBy?: string | null;
-    sharedAt?: string | null;
-    isPublic?: boolean;
-}
 
 interface DesignConfig {
     floor: string;
