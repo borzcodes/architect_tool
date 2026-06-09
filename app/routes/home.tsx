@@ -14,7 +14,10 @@ export function meta({}: Route.MetaArgs) {
     ];
 }
 
-
+export default function Home() {
+    const navigate = useNavigate();
+    const [projects, setProjects] = useState<DesignItem[]>([]);
+    const isCreatingProjectRef = useRef(false);
 
     const handleUploadComplete = async (base64Image: string) => {
         try {
